@@ -1,0 +1,32 @@
+type Person {
+    seed: ID!
+    firstName: String!
+    lastName: String!
+    email: String!
+    phone: String!
+}
+
+type Address {
+    seed: ID!
+    street: String!
+    city: String!
+    state: String!
+    postalCode: String!
+}
+
+input PersonInput {
+    seed: ID
+}
+
+input AddressInput {
+    seed: ID
+}
+
+type Query {
+    person(personInput: PersonInput): Person!
+    address(addressInput: AddressInput): Address!
+}
+
+schema {
+    query: Query
+}

@@ -1,0 +1,15 @@
+# JetBrains IDEs
+.idea
+
+# Testing
+coverage.out
+coverage.html
+
+# Terraform / OpenTofu
+.terraform
+cdktf.out
+cdktf.log
+*terraform.tfstate*
+*terraform.tfplan*
+generated
+!bootstrap/
